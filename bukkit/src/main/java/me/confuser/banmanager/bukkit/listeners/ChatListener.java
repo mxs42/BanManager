@@ -28,19 +28,19 @@ public class ChatListener implements Listener {
   }
 
   public void onPlayerChat(AsyncPlayerChatEvent event) {
-    CommonPlayer player = plugin.getServer().getPlayer(event.getPlayer().getUniqueId());
-
-    if (listener.onPlayerChat(player, new ChatHandler(event), event.getMessage())) {
-      event.setCancelled(true);
-    }
+//    CommonPlayer player = plugin.getServer().getPlayer(event.getPlayer().getUniqueId());
+//
+//    if (listener.onPlayerChat(player, new ChatHandler(event), event.getMessage())) {
+//      event.setCancelled(true);
+//    }
   }
 
   public void onIpChat(AsyncPlayerChatEvent event) {
-    CommonPlayer player = plugin.getServer().getPlayer(event.getPlayer().getUniqueId());
-
-    if (listener.onIpChat(player, event.getPlayer().getAddress().getAddress(), new ChatHandler(event), event.getMessage())) {
-      event.setCancelled(true);
-    }
+//    CommonPlayer player = plugin.getServer().getPlayer(event.getPlayer().getUniqueId());
+//
+//    if (listener.onIpChat(player, event.getPlayer().getAddress().getAddress(), new ChatHandler(event), event.getMessage())) {
+//      event.setCancelled(true);
+//    }
   }
 
   @RequiredArgsConstructor
